@@ -13,6 +13,8 @@
 		75EBD1D619DD99A800183B88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EBD1D519DD99A800183B88 /* Images.xcassets */; };
 		75EBD1D919DD99A800183B88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EBD1D719DD99A800183B88 /* LaunchScreen.xib */; };
 		75EBD1E519DD99A900183B88 /* SimplyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1E419DD99A900183B88 /* SimplyTests.m */; };
+		75EBD1F019DD9B1000183B88 /* MyListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1EF19DD9B1000183B88 /* MyListsViewController.m */; };
+		75EBD1F319DD9ED200183B88 /* AddNewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1F219DD9ED200183B88 /* AddNewListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		75EBD1DE19DD99A900183B88 /* SimplyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EBD1E319DD99A900183B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75EBD1E419DD99A900183B88 /* SimplyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplyTests.m; sourceTree = "<group>"; };
+		75EBD1EE19DD9B1000183B88 /* MyListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyListsViewController.h; sourceTree = "<group>"; };
+		75EBD1EF19DD9B1000183B88 /* MyListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyListsViewController.m; sourceTree = "<group>"; };
+		75EBD1F119DD9ED200183B88 /* AddNewListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewListViewController.h; sourceTree = "<group>"; };
+		75EBD1F219DD9ED200183B88 /* AddNewListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		75EBD1C719DD99A800183B88 /* Simply */ = {
 			isa = PBXGroup;
 			children = (
+				75EBD1F419DD9EDC00183B88 /* Controllers */,
 				75EBD1CC19DD99A800183B88 /* AppDelegate.h */,
 				75EBD1CD19DD99A800183B88 /* AppDelegate.m */,
 				75EBD1D219DD99A800183B88 /* Main.storyboard */,
@@ -112,6 +119,33 @@
 				75EBD1E319DD99A900183B88 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EBD1F419DD9EDC00183B88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD1F619DD9F0A00183B88 /* Composer */,
+				75EBD1F519DD9EE800183B88 /* List View */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		75EBD1F519DD9EE800183B88 /* List View */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD1EE19DD9B1000183B88 /* MyListsViewController.h */,
+				75EBD1EF19DD9B1000183B88 /* MyListsViewController.m */,
+			);
+			name = "List View";
+			sourceTree = "<group>";
+		};
+		75EBD1F619DD9F0A00183B88 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD1F119DD9ED200183B88 /* AddNewListViewController.h */,
+				75EBD1F219DD9ED200183B88 /* AddNewListViewController.m */,
+			);
+			name = Composer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75EBD1CE19DD99A800183B88 /* AppDelegate.m in Sources */,
+				75EBD1F019DD9B1000183B88 /* MyListsViewController.m in Sources */,
 				75EBD1CB19DD99A800183B88 /* main.m in Sources */,
+				75EBD1F319DD9ED200183B88 /* AddNewListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ocM-3T-bH0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -18,12 +18,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3R-V7-HCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="148"/>
+            <point key="canvasLocation" x="-417" y="-14"/>
         </scene>
-        <!--View Controller-->
+        <!--My Lists-->
         <scene sceneID="gfy-hb-Civ">
             <objects>
-                <viewController id="7QC-8c-OTU" sceneMemberID="viewController">
+                <viewController id="7QC-8c-OTU" customClass="MyListsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TPl-R1-e8b"/>
                         <viewControllerLayoutGuide type="bottom" id="mpR-aF-Yy0"/>
@@ -33,11 +33,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="v8H-JM-G9d"/>
+                    <navigationItem key="navigationItem" title="My Lists" id="v8H-JM-G9d">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vZG-sl-sJm">
+                            <connections>
+                                <segue destination="ZVj-oz-wtG" kind="modal" identifier="AddList" id="h7o-dp-b3g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEU-GA-wRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="148"/>
+            <point key="canvasLocation" x="54" y="96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eca-h0-xJ5">
+            <objects>
+                <navigationController id="ZVj-oz-wtG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CuP-Sr-q5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yGN-65-ISu" kind="relationship" relationship="rootViewController" id="dXT-vz-w9d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTq-1m-Yu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="-198"/>
+        </scene>
+        <!--New List-->
+        <scene sceneID="t4Z-Wt-iCp">
+            <objects>
+                <viewController id="yGN-65-ISu" customClass="AddNewListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Po-mM-GXi"/>
+                        <viewControllerLayoutGuide type="bottom" id="X9z-kT-SPD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PNr-1s-gam">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New List" id="UiK-tu-jjM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="A9d-hd-3i9">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="yGN-65-ISu" id="T0b-nT-ZIW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ib2-lA-1Qn">
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="yGN-65-ISu" id="Fbu-BP-gyD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-G1-Lcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="-163"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
