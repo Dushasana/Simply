@@ -15,6 +15,7 @@
 		75EBD1E519DD99A900183B88 /* SimplyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1E419DD99A900183B88 /* SimplyTests.m */; };
 		75EBD1F019DD9B1000183B88 /* MyListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1EF19DD9B1000183B88 /* MyListsViewController.m */; };
 		75EBD1F319DD9ED200183B88 /* AddNewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1F219DD9ED200183B88 /* AddNewListViewController.m */; };
+		EF422E3D19DDC419009661C5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF422E3C19DDC419009661C5 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		75EBD1EF19DD9B1000183B88 /* MyListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyListsViewController.m; sourceTree = "<group>"; };
 		75EBD1F119DD9ED200183B88 /* AddNewListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewListViewController.h; sourceTree = "<group>"; };
 		75EBD1F219DD9ED200183B88 /* AddNewListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewListViewController.m; sourceTree = "<group>"; };
+		EF422E3B19DDC419009661C5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		EF422E3C19DDC419009661C5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 		75EBD1F419DD9EDC00183B88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF422E3A19DDC20F009661C5 /* Settings */,
 				75EBD1F619DD9F0A00183B88 /* Composer */,
 				75EBD1F519DD9EE800183B88 /* List View */,
 			);
@@ -146,6 +150,15 @@
 				75EBD1F219DD9ED200183B88 /* AddNewListViewController.m */,
 			);
 			name = Composer;
+			sourceTree = "<group>";
+		};
+		EF422E3A19DDC20F009661C5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EF422E3B19DDC419009661C5 /* SettingsViewController.h */,
+				EF422E3C19DDC419009661C5 /* SettingsViewController.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			files = (
 				75EBD1CE19DD99A800183B88 /* AppDelegate.m in Sources */,
 				75EBD1F019DD9B1000183B88 /* MyListsViewController.m in Sources */,
+				EF422E3D19DDC419009661C5 /* SettingsViewController.m in Sources */,
 				75EBD1CB19DD99A800183B88 /* main.m in Sources */,
 				75EBD1F319DD9ED200183B88 /* AddNewListViewController.m in Sources */,
 			);
@@ -442,6 +456,7 @@
 				75EBD1EA19DD99A900183B88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75EBD1EB19DD99A900183B88 /* Build configuration list for PBXNativeTarget "SimplyTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +465,7 @@
 				75EBD1ED19DD99A900183B88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

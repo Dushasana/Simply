@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ocM-3T-bH0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ocM-3T-bH0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -24,17 +24,17 @@
         <scene sceneID="gfy-hb-Civ">
             <objects>
                 <viewController id="7QC-8c-OTU" customClass="MyListsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TPl-R1-e8b"/>
-                        <viewControllerLayoutGuide type="bottom" id="mpR-aF-Yy0"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iXE-VB-2tc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Lists" id="v8H-JM-G9d">
-                        <barButtonItem key="leftBarButtonItem" image="configButton" id="4GH-zb-ggW"/>
+                        <barButtonItem key="leftBarButtonItem" image="configButton" id="4GH-zb-ggW">
+                            <connections>
+                                <segue destination="2qh-Dp-K0o" kind="modal" identifier="settingsView" id="VOe-BF-DbV"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vZG-sl-sJm">
                             <connections>
                                 <segue destination="ZVj-oz-wtG" kind="modal" identifier="AddList" id="h7o-dp-b3g"/>
@@ -44,7 +44,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEU-GA-wRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1092" y="-394"/>
+            <point key="canvasLocation" x="-1172" y="-394"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aeQ-3C-KLa">
+            <objects>
+                <navigationController id="2qh-Dp-K0o" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FFo-TH-SC4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rpP-eF-Lqj" kind="relationship" relationship="rootViewController" id="EVR-hA-W7l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fET-Pt-Fs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-813" y="-1054"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="tqw-uH-G9J">
+            <objects>
+                <viewController id="rpP-eF-Lqj" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pmj-HH-DKy" customClass="Sett">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="lvl-lU-PwD">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="j4O-fd-tTo"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="miH-bS-4oN">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="rpP-eF-Lqj" id="EGz-5U-8C1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3bk-dq-ddc">
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="rpP-eF-Lqj" id="WSH-3N-H0i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjq-jI-CJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-604" y="-982"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eca-h0-xJ5">
@@ -60,16 +103,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTq-1m-Yu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-547" y="-394"/>
+            <point key="canvasLocation" x="-651" y="-134"/>
         </scene>
         <!--New List-->
         <scene sceneID="t4Z-Wt-iCp">
             <objects>
                 <viewController id="yGN-65-ISu" customClass="AddNewListViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6Po-mM-GXi"/>
-                        <viewControllerLayoutGuide type="bottom" id="X9z-kT-SPD"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNr-1s-gam">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,6 +138,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

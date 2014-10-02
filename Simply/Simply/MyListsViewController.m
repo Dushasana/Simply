@@ -7,6 +7,7 @@
 //
 
 #import "MyListsViewController.h"
+#import "SettingsViewController.h"
 
 @interface MyListsViewController ()
 
@@ -28,6 +29,12 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+-(void)didCompletedActionsInSettingsController:( SettingsViewController *)controller{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(void)setUpNavBar{
     
 }
@@ -40,6 +47,12 @@
         
         AddNewListViewController * controller = [navigationController viewControllers][0];
         controller.delegate=self;
+    }
+    if ([segue.identifier isEqualToString:@"settingsView"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+        SettingsViewController *controller = [navigationController viewControllers][0];
+        controller.delegate = self;
+        
     }
 }
 

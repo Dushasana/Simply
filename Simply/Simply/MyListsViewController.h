@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AddNewListViewController.h"
-@interface MyListsViewController : UIViewController<addNewListViewControllerDelegate>
+#import "SettingsViewController.h"
+@interface MyListsViewController : UIViewController<addNewListViewControllerDelegate,settingsViewControllerDelegate>
 
 @end
