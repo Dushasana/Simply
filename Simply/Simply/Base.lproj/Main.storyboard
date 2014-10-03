@@ -64,7 +64,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fET-Pt-Fs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1057" y="-1180"/>
+            <point key="canvasLocation" x="-993" y="-1412"/>
         </scene>
         <!--Settings-->
         <scene sceneID="tqw-uH-G9J">
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjq-jI-CJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-604" y="-982"/>
+            <point key="canvasLocation" x="-528" y="-1406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eca-h0-xJ5">
@@ -111,7 +111,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTq-1m-Yu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-651" y="-134"/>
+            <point key="canvasLocation" x="-669" y="-710"/>
         </scene>
         <!--New List-->
         <scene sceneID="t4Z-Wt-iCp">
@@ -132,7 +132,6 @@
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Enter Optional Notes Here" translatesAutoresizingMaskIntoConstraints="NO" id="i2B-0A-jYb">
                                 <rect key="frame" x="10" y="113" width="300" height="193"/>
-                                <color key="backgroundColor" red="0.51760601979999998" green="1" blue="0.5480145958" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -170,44 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-G1-Lcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-160" y="-538"/>
-        </scene>
-        <!--New List-->
-        <scene sceneID="L0P-mj-nOv">
-            <objects>
-                <viewController id="NFz-OL-rAk" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iJP-yz-Bui"/>
-                        <viewControllerLayoutGuide type="bottom" id="mg1-TQ-3tH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uZb-Nv-ppJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter List name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaO-8Q-KTZ">
-                                <rect key="frame" x="10" y="77" width="300" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="New List" id="VIq-Vq-AXm">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LXW-hI-qMW">
-                            <connections>
-                                <action selector="cancelButtonClicked:" destination="NFz-OL-rAk" id="Vq3-9h-sys"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="I05-Tv-cLS">
-                            <connections>
-                                <action selector="doneButtonClicked:" destination="NFz-OL-rAk" id="k2g-e3-1i1"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2lu-Nf-8fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="174" y="-464"/>
+            <point key="canvasLocation" x="-156" y="-804"/>
         </scene>
     </scenes>
     <resources>
