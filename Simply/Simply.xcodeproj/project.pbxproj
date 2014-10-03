@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751D2CD119DE775A001459C9 /* CALayer+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 751D2CD019DE775A001459C9 /* CALayer+extension.m */; };
 		75EBD1CB19DD99A800183B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1CA19DD99A800183B88 /* main.m */; };
 		75EBD1CE19DD99A800183B88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1CD19DD99A800183B88 /* AppDelegate.m */; };
 		75EBD1D419DD99A800183B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EBD1D219DD99A800183B88 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751D2CCF19DE775A001459C9 /* CALayer+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+extension.h"; sourceTree = "<group>"; };
+		751D2CD019DE775A001459C9 /* CALayer+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+extension.m"; sourceTree = "<group>"; };
 		75EBD1C519DD99A800183B88 /* Simply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simply.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EBD1C919DD99A800183B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75EBD1CA19DD99A800183B88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 		75EBD1F419DD9EDC00183B88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				751D2CCF19DE775A001459C9 /* CALayer+extension.h */,
+				751D2CD019DE775A001459C9 /* CALayer+extension.m */,
 				EF422E3A19DDC20F009661C5 /* Settings */,
 				75EBD1F619DD9F0A00183B88 /* Composer */,
 				75EBD1F519DD9EE800183B88 /* List View */,
@@ -266,6 +271,7 @@
 				EF422E3D19DDC419009661C5 /* SettingsViewController.m in Sources */,
 				75EBD1CB19DD99A800183B88 /* main.m in Sources */,
 				75EBD1F319DD9ED200183B88 /* AddNewListViewController.m in Sources */,
+				751D2CD119DE775A001459C9 /* CALayer+extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

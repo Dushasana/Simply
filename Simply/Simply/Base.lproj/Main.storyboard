@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ocM-3T-bH0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ocM-3T-bH0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -24,6 +24,10 @@
         <scene sceneID="gfy-hb-Civ">
             <objects>
                 <viewController id="7QC-8c-OTU" customClass="MyListsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dqm-3K-kKg"/>
+                        <viewControllerLayoutGuide type="bottom" id="hvv-8g-S9s"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iXE-VB-2tc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +70,10 @@
         <scene sceneID="tqw-uH-G9J">
             <objects>
                 <viewController id="rpP-eF-Lqj" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xSp-OS-6E8"/>
+                        <viewControllerLayoutGuide type="bottom" id="RI0-gE-T7h"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pmj-HH-DKy" customClass="Sett">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,10 +117,43 @@
         <scene sceneID="t4Z-Wt-iCp">
             <objects>
                 <viewController id="yGN-65-ISu" customClass="AddNewListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UBw-Xj-hnB"/>
+                        <viewControllerLayoutGuide type="bottom" id="f7n-SO-q1s"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNr-1s-gam">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter List Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cx6-mq-vfE">
+                                <rect key="frame" x="10" y="75" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Enter Optional Notes Here" translatesAutoresizingMaskIntoConstraints="NO" id="i2B-0A-jYb">
+                                <rect key="frame" x="10" y="113" width="300" height="193"/>
+                                <color key="backgroundColor" red="0.51760601979999998" green="1" blue="0.5480145958" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                        <color key="value" red="0.76717476220000003" green="0.76717476220000003" blue="0.76717476220000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cx6-mq-vfE" secondAttribute="trailing" constant="10" id="Vcq-iB-RZd"/>
+                            <constraint firstItem="cx6-mq-vfE" firstAttribute="leading" secondItem="PNr-1s-gam" secondAttribute="leading" constant="10" id="WV6-xO-HNw"/>
+                            <constraint firstItem="cx6-mq-vfE" firstAttribute="top" secondItem="UBw-Xj-hnB" secondAttribute="bottom" constant="11" id="dKA-hB-pFk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New List" id="UiK-tu-jjM">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="A9d-hd-3i9">
@@ -120,7 +161,7 @@
                                 <action selector="cancelButtonClicked:" destination="yGN-65-ISu" id="T0b-nT-ZIW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ib2-lA-1Qn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ib2-lA-1Qn">
                             <connections>
                                 <action selector="doneButtonClicked:" destination="yGN-65-ISu" id="Fbu-BP-gyD"/>
                             </connections>
@@ -129,7 +170,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-G1-Lcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="-372"/>
+            <point key="canvasLocation" x="-160" y="-538"/>
+        </scene>
+        <!--New List-->
+        <scene sceneID="L0P-mj-nOv">
+            <objects>
+                <viewController id="NFz-OL-rAk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iJP-yz-Bui"/>
+                        <viewControllerLayoutGuide type="bottom" id="mg1-TQ-3tH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uZb-Nv-ppJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter List name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaO-8Q-KTZ">
+                                <rect key="frame" x="10" y="77" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New List" id="VIq-Vq-AXm">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LXW-hI-qMW">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="NFz-OL-rAk" id="Vq3-9h-sys"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="I05-Tv-cLS">
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="NFz-OL-rAk" id="k2g-e3-1i1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lu-Nf-8fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="-464"/>
         </scene>
     </scenes>
     <resources>
