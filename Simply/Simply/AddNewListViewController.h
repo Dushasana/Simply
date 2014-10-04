@@ -15,7 +15,9 @@
 
 
 @interface AddNewListViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *listTitle;
 
+@property (weak, nonatomic) IBOutlet UITextView *notes;
 @property (nonatomic,strong)id<addNewListViewControllerDelegate>delegate;
 - (IBAction)cancelButtonClicked:(id)sender;
 - (IBAction)saveButtonClicked:(id)sender;

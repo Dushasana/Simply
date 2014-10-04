@@ -8,7 +8,7 @@
 
 #import "MyListsViewController.h"
 #import "SettingsViewController.h"
-
+#import "DataStore.h"
 @interface MyListsViewController ()
 
 @end
@@ -17,9 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  //  [self.listTableView registerClass:NSClassFromString(@"ListTableCell") forCellReuseIdentifier:@"ListCell"];
     // Do any additional setup after loading the view.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    
+    self.shoppingLists = [[DataStore store]listItems];
+    [self.listTableView reloadData];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -68,14 +73,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     // Return the number of rows in the section.
-    return self.Lists.count;
+    return self.shoppingLists.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ListTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListCell" forIndexPath:indexPath];
     
-    ShoppingList * currentList = (self.Lists)[indexPath.row];
+    ShoppingList * currentList = (ShoppingList *)(self.shoppingLists)[indexPath.row];
     cell.listName.text = currentList.title;
    // cell.subtitle.text = player.game;
     //cell.imageView.image =[self imageForRating:player.rating];

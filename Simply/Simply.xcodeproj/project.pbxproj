@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		751D2CD119DE775A001459C9 /* CALayer+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 751D2CD019DE775A001459C9 /* CALayer+extension.m */; };
+		7543D86119DFC9DD00FE6595 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7543D86019DFC9DD00FE6595 /* DataStore.m */; };
 		75718B1519DEF0F70083CD9D /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = 75718B1419DEF0F70083CD9D /* ShoppingList.m */; };
 		75718B1919DEF9EE0083CD9D /* ListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75718B1819DEF9EE0083CD9D /* ListTableCell.m */; };
 		75EBD1CB19DD99A800183B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1CA19DD99A800183B88 /* main.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		751D2CCF19DE775A001459C9 /* CALayer+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+extension.h"; sourceTree = "<group>"; };
 		751D2CD019DE775A001459C9 /* CALayer+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+extension.m"; sourceTree = "<group>"; };
+		7543D85F19DFC9DD00FE6595 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		7543D86019DFC9DD00FE6595 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		75718B1319DEF0F70083CD9D /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
 		75718B1419DEF0F70083CD9D /* ShoppingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingList.m; sourceTree = "<group>"; };
 		75718B1619DEF1DE0083CD9D /* SimplyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplyConstants.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				75EBD1D519DD99A800183B88 /* Images.xcassets */,
 				75EBD1D719DD99A800183B88 /* LaunchScreen.xib */,
 				75EBD1C819DD99A800183B88 /* Supporting Files */,
+				7543D85F19DFC9DD00FE6595 /* DataStore.h */,
+				7543D86019DFC9DD00FE6595 /* DataStore.m */,
 			);
 			path = Simply;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				75EBD1F319DD9ED200183B88 /* AddNewListViewController.m in Sources */,
 				75718B1919DEF9EE0083CD9D /* ListTableCell.m in Sources */,
 				751D2CD119DE775A001459C9 /* CALayer+extension.m in Sources */,
+				7543D86119DFC9DD00FE6595 /* DataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

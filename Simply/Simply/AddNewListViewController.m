@@ -7,6 +7,8 @@
 //
 
 #import "AddNewListViewController.h"
+#import "ShoppingList.h"
+#import "DataStore.h"
 
 @interface AddNewListViewController ()
 
@@ -29,7 +31,11 @@
 }
 - (IBAction)saveButtonClicked:(id)sender{
     
-    
+    ShoppingList * list = [[ShoppingList alloc]init];
+    list.title = self.listTitle.text;
+    list.notes = self.notes.text;
+    [[[DataStore store] listItems] addObject:list];
+   [ self.delegate didCompletedActionsInController:self];
 }
 /*
 #pragma mark - Navigation

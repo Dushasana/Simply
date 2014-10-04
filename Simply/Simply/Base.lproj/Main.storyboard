@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="7QC-8c-OTU" kind="relationship" relationship="rootViewController" id="v6z-vf-UxR"/>
+                        <segue destination="7QC-8c-OTU" kind="relationship" relationship="rootViewController" id="if5-cu-Qx3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3R-V7-HCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,18 +32,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="37q-yv-wqt">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pDW-eY-UCk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="60" id="KTi-Fh-8i7" customClass="ListTableCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" id="cgs-7k-rQg" customClass="ListTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KTi-Fh-8i7" id="nUI-5s-BYM">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cgs-7k-rQg" id="QG5-YO-N4b">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udG-f4-4G4">
-                                                    <rect key="frame" x="29" y="19" width="244" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9h-sg-O4M">
+                                                    <rect key="frame" x="16" y="11" width="217" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -51,24 +51,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="listName" destination="udG-f4-4G4" id="cbJ-Sn-iBe"/>
+                                            <outlet property="listName" destination="R9h-sg-O4M" id="4xT-7W-IKG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="7QC-8c-OTU" id="FYb-A2-QFM"/>
-                                    <outlet property="delegate" destination="7QC-8c-OTU" id="Ubv-sz-Joe"/>
+                                    <outlet property="dataSource" destination="7QC-8c-OTU" id="kgF-fp-PKa"/>
+                                    <outlet property="delegate" destination="7QC-8c-OTU" id="EJB-Sz-HBZ"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="37q-yv-wqt" secondAttribute="trailing" id="74j-pI-6o1"/>
-                            <constraint firstItem="37q-yv-wqt" firstAttribute="leading" secondItem="iXE-VB-2tc" secondAttribute="leading" id="EN5-Dq-yQ1"/>
-                            <constraint firstItem="37q-yv-wqt" firstAttribute="top" secondItem="dqm-3K-kKg" secondAttribute="bottom" id="cWd-Qm-k4m"/>
-                            <constraint firstItem="hvv-8g-S9s" firstAttribute="top" secondItem="37q-yv-wqt" secondAttribute="bottom" id="cdB-Or-lAz"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Lists" id="v8H-JM-G9d">
                         <barButtonItem key="leftBarButtonItem" image="configButton" id="4GH-zb-ggW">
@@ -82,6 +75,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="listTableView" destination="pDW-eY-UCk" id="bd9-cG-jfk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEU-GA-wRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,7 +97,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fET-Pt-Fs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1057" y="-1180"/>
+            <point key="canvasLocation" x="-863" y="-1184"/>
         </scene>
         <!--Settings-->
         <scene sceneID="tqw-uH-G9J">
@@ -131,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjq-jI-CJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-604" y="-982"/>
+            <point key="canvasLocation" x="-512" y="-1128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eca-h0-xJ5">
@@ -203,6 +199,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="listTitle" destination="cx6-mq-vfE" id="17P-Ub-DDB"/>
+                        <outlet property="notes" destination="i2B-0A-jYb" id="0bn-le-FEy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-G1-Lcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

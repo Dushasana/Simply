@@ -13,6 +13,7 @@
 #import "ShoppingList.h"
 @interface MyListsViewController : UIViewController<addNewListViewControllerDelegate,settingsViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong) NSMutableArray * Lists;
+@property (nonatomic,strong) NSMutableArray * shoppingLists;
+@property (weak, nonatomic) IBOutlet UITableView *listTableView;
 
 @end
