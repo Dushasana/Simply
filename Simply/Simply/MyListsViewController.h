@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AddNewListViewController.h"
 #import "SettingsViewController.h"
-@interface MyListsViewController : UIViewController<addNewListViewControllerDelegate,settingsViewControllerDelegate>
+#import "ListTableCell.h"
+#import "ShoppingList.h"
+@interface MyListsViewController : UIViewController<addNewListViewControllerDelegate,settingsViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong) NSMutableArray * Lists;
 
 @end

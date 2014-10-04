@@ -18,6 +18,6 @@
 
 @property (nonatomic,strong)id<addNewListViewControllerDelegate>delegate;
 - (IBAction)cancelButtonClicked:(id)sender;
-- (IBAction)doneButtonClicked:(id)sender;
+- (IBAction)saveButtonClicked:(id)sender;
 
 @end

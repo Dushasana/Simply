@@ -56,5 +56,32 @@
     }
 }
 
+#pragma mark- delegates tableview
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    // Return the number of rows in the section.
+    return self.Lists.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ListTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListCell" forIndexPath:indexPath];
+    
+    ShoppingList * currentList = (self.Lists)[indexPath.row];
+    cell.listName.text = currentList.title;
+   // cell.subtitle.text = player.game;
+    //cell.imageView.image =[self imageForRating:player.rating];
+    return cell;
+}
+
+
 
 @end

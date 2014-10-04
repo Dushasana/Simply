@@ -27,7 +27,7 @@
     
     [self.delegate didCompletedActionsInController:self];
 }
-- (IBAction)doneButtonClicked:(id)sender{
+- (IBAction)saveButtonClicked:(id)sender{
     
     
 }
