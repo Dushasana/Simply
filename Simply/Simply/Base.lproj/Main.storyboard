@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3R-V7-HCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1581" y="-386"/>
+            <point key="canvasLocation" x="-2003" y="-414"/>
         </scene>
         <!--My Lists-->
         <scene sceneID="gfy-hb-Civ">
@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" id="cgs-7k-rQg" customClass="ListTableCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" id="cgs-7k-rQg" customClass="ListTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cgs-7k-rQg" id="QG5-YO-N4b">
@@ -52,6 +52,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="listName" destination="R9h-sg-O4M" id="4xT-7W-IKG"/>
+                                            <segue destination="dfq-QD-OrH" kind="push" id="6ku-2X-wsL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -81,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEU-GA-wRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1172" y="-394"/>
+            <point key="canvasLocation" x="-1412" y="-414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aeQ-3C-KLa">
@@ -97,7 +98,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fET-Pt-Fs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-863" y="-1184"/>
+            <point key="canvasLocation" x="-945" y="-1090"/>
         </scene>
         <!--Settings-->
         <scene sceneID="tqw-uH-G9J">
@@ -127,7 +128,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjq-jI-CJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-512" y="-1128"/>
+            <point key="canvasLocation" x="-444" y="-1090"/>
+        </scene>
+        <!--Lists-->
+        <scene sceneID="Swq-nj-Hjw">
+            <objects>
+                <viewController id="dfq-QD-OrH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="22" sectionFooterHeight="22" id="xcw-5Z-IPc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="qXZ-bW-tkH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qXZ-bW-tkH" id="GoI-VQ-RJc">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lists" id="1pd-0Q-sez"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7A-Wj-KDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="-397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eca-h0-xJ5">
@@ -143,7 +168,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTq-1m-Yu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-651" y="-134"/>
+            <point key="canvasLocation" x="-945" y="144"/>
         </scene>
         <!--New List-->
         <scene sceneID="t4Z-Wt-iCp">
@@ -206,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-G1-Lcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-160" y="-538"/>
+            <point key="canvasLocation" x="-348" y="144"/>
         </scene>
     </scenes>
     <resources>

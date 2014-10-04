@@ -30,12 +30,13 @@
     [self.delegate didCompletedActionsInController:self];
 }
 - (IBAction)saveButtonClicked:(id)sender{
-    
+    if(self.listTitle.text.length >0){
     ShoppingList * list = [[ShoppingList alloc]init];
     list.title = self.listTitle.text;
     list.notes = self.notes.text;
     [[[DataStore store] listItems] addObject:list];
    [ self.delegate didCompletedActionsInController:self];
+    }
 }
 /*
 #pragma mark - Navigation
